@@ -1,6 +1,9 @@
 wifi 650g2
 sudo apt-get install linux-headers-generic
 sudo apt-get install --reinstall bcmwl-kernel-source
+reboot
+
+****
 
 devices 
 lspci -vv
