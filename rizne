@@ -7,3 +7,7 @@ reboot
 
 devices 
 lspci -vv
+
+****
+
+sudo apt-get update && sudo apt-get upgrade
