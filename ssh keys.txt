@@ -77,12 +77,14 @@ epualviw7777t1:~ vadym_traida$ ssh-add -l
 $touch ~/.ssh/config
 $ nano ~/.ssh/config
   
-  GNU nano 2.0.6                                                      File: /Users/vadym_traida/.ssh/config
+GNU nano 2.0.6                                                      File: /Users/vadym_traida/.ssh/config
 
 Host test16
 HostName 10.25.14.14
 User vtraida
 IdentityFile ~/vtraida-key18
+
+...
 
 
 
