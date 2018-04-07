@@ -54,19 +54,19 @@ $ ssh-add vtraida-18key
 Permissions 0644 for 'vtraida-18key' are too open.
 It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
-epualviw7777t1:~ vadym_traida$ chmod 400 ~/vtraida-18key
-epualviw7777t1:~ vadym_traida$ ssh-add vtraida-18key
+$ chmod 400 ~/vtraida-18key
+$ ssh-add vtraida-18key
 Enter passphrase for vtraida-18key:
 Bad passphrase, try again for vtraida-18key:
 Identity added: vtraida-18key (vtraida-18key)
 
 #show added keys
-epualviw7777t1:~ vadym_traida$ ssh-add -l
+$ ssh-add -l
 4096 SHA256:AzuvDIUZq0bgj6WhWO/UfowVqiQKLskS2n+e7dLOfVg vtraida-18key (RSA)
 
 
 #Shortcut configuration
-#You can set up a connection shortcut by creating a ~/.ssh/config file on your local computer and adding your server and key details to it.
+#You can set up a connection shortcut by creating a ~/.ssh/config file on your local computer and adding your server and key #details to it.
 #Using a text editor, add the following text to the ~/.ssh/config file, changing the values to match your server information:
 
 #Host shortcutName
