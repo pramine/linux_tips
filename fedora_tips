@@ -1,10 +1,12 @@
-systemctl enable sshd.service
 #This will enable sshd so it starts on the next boot and every subsequent boot, but it won't immediately start up sshd.
+systemctl enable sshd.service
+
+#start it manually 
 systemctl start sshd.service
-start it manually 
 
 
-F.5. Shutting Down
+
+#Shutting Down
 To shut down Fedora, the root user may issue the /sbin/shutdown command. The shutdown man page has a complete list of options, but the two most common uses are:
 /sbin/shutdown -h now
 and
