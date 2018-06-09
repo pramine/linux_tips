@@ -1,3 +1,6 @@
 https://askubuntu.com/questions/139816/how-can-i-configure-cowsay 
 https://www.youtube.com/watch?v=VwHCFfg7Vdk
 https://www.digitalocean.com/community/tutorials/top-10-linux-easter-eggs
+
+
+fortune | `ls /usr/games/cow* | shuf -n 1` -f `ls /usr/share/cowsay/cows/ | shuf -n 1`
