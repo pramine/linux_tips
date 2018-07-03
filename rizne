@@ -1,3 +1,8 @@
+word list
+https://translate.google.com.ua/#en/uk/floating%20ip%20address%0Aanchor%0Acurl%0Aleast%20error-prone%20way
+
+
+*****
 wifi 650g2
 sudo apt-get install linux-headers-generic
 sudo apt-get install --reinstall bcmwl-kernel-source
@@ -15,3 +20,5 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install openssh-server && sudo service ssh status
 
 ***
+control-insert = copy
+shift-insert = paste
