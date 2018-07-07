@@ -1,0 +1,21 @@
+##serch listening ip or port
+ss -plantu | grep 22
+
+$ ss -plantu | grep 22
+tcp  LISTEN 0      128                    0.0.0.0:22                    0.0.0.0:*                                                                               
+tcp  ESTAB  0      0                    127.0.0.1:33962               127.0.0.1:22                     users:(("ssh",pid=31018,fd=3))                           
+tcp  ESTAB  0      0                192.168.0.102:47248           192.168.0.103:22                     users:(("ssh",pid=26075,fd=3))                           
+tcp  ESTAB  0      0                192.168.0.102:40158         173.194.222.108:993                    users:(("thunderbird",pid=28399,fd=43))                  
+tcp  ESTAB  0      0                    127.0.0.1:22                  127.0.0.1:33962                                                                           
+tcp  ESTAB  0      0                192.168.0.102:40166         173.194.222.108:993                    users:(("thunderbird",pid=28399,fd=82))                  
+tcp  ESTAB  0      0                192.168.0.102:40134         173.194.222.108:993                    users:(("thunderbird",pid=28399,fd=49))                  
+tcp  ESTAB  0      0                192.168.0.102:35824           54.192.228.22:443                    users:(("chrome",pid=2375,fd=212))                       
+tcp  ESTAB  0      0                192.168.0.102:40132         173.194.222.108:993                    users:(("thunderbird",pid=28399,fd=41))                  
+tcp  LISTEN 0      128                       [::]:22                       [::]:*      
+
+# show running process
+$ ps aux | grep sshd
+root     31019  0.0  0.0 110076  7296 ?        Ss   20:24   0:00 sshd: vtraida [priv]
+vtraida  31135  0.0  0.0 110076  3404 ?        S    20:25   0:00 sshd: vtraida@pts/2
+root     31690  0.0  0.0  72296  5700 ?        Ss   20:37   0:00 /usr/sbin/sshd -D
+vtraida  32119  0.0  0.0  23040  1000 pts/0    S+   20:55   0:00 grep --color=auto sshd
