@@ -13,9 +13,13 @@ tcp  ESTAB  0      0                192.168.0.102:35824           54.192.228.22:
 tcp  ESTAB  0      0                192.168.0.102:40132         173.194.222.108:993                    users:(("thunderbird",pid=28399,fd=41))                  
 tcp  LISTEN 0      128                       [::]:22                       [::]:*      
 
-# show running process
+##show running process
 $ ps aux | grep sshd
 root     31019  0.0  0.0 110076  7296 ?        Ss   20:24   0:00 sshd: vtraida [priv]
 vtraida  31135  0.0  0.0 110076  3404 ?        S    20:25   0:00 sshd: vtraida@pts/2
 root     31690  0.0  0.0  72296  5700 ?        Ss   20:37   0:00 /usr/sbin/sshd -D
 vtraida  32119  0.0  0.0  23040  1000 pts/0    S+   20:55   0:00 grep --color=auto sshd
+
+##receive example.com:80 on 127.0.0.1:3333
+$ ssh -L 127.0.0.1:3333:127.0.0.1:80 vtraida@example.com -p2220
+
