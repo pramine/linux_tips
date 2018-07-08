@@ -38,6 +38,11 @@ $ firewall-cmd --reload
 #on localhost:80 run 
 $ ssh -R example.com:8090:192.168.0.102:80 vtraida@example.com -p 2220
 
+iptables -t nat -nvL --line-numbers
+
 ##open example.com:80 for local network - on port 8080 ssh is on 2220
 
 $ ssh -L 192.168.0.102:8080:127.0.0.1:80 vtraida@example.com -p 2220
+
+##?????
+iptables -t nat -nvL --line-numbers
