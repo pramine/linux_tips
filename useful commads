@@ -20,10 +20,10 @@ vtraida  31135  0.0  0.0 110076  3404 ?        S    20:25   0:00 sshd: vtraida@p
 root     31690  0.0  0.0  72296  5700 ?        Ss   20:37   0:00 /usr/sbin/sshd -D
 vtraida  32119  0.0  0.0  23040  1000 pts/0    S+   20:55   0:00 grep --color=auto sshd
 
-##receive example.com:80 on 127.0.0.1:3333 ssh is on 2220
+##receive example.com:80 on 127.0.0.1:3333 ssh is on 2220 ## https://habr.com/post/122445/
 $ ssh -L 127.0.0.1:3333:127.0.0.1:80 vtraida@example.com -p2220
 
-##forward 127.0.0.1:80 on example.com:8090 ssh is on 2220
+##forward 127.0.0.1:80 on example.com:8090 ssh is on 2220 ## https://habr.com/post/122445/
 #enable on server
 $ nano /etc/ssh/sshd_config 
 GatewayPorts yes
