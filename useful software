@@ -7,3 +7,13 @@ git-sh
 vim
 dia
 gnome-tweak-tool
+
+viber 
+Warning:
+As pointed out by our readers ( see comments below ) the following Viber installation procedure will inadvertently remove libcurl4 from your system and replace it by libcurl3 package due to improper Viber package dependency definition. From this reason you are recommended to install Viber by using the following set of commands in order to preserve libcurl4 state on your system.
+sudo apt-mark hold libcurl4
+sudo dpkg -i --ignore-depends=libcurl3 ~/viber.deb
+sudo apt install -f
+sudo dpkg -i --ignore-depends=libcurl3 ~/viber.deb
+sudo apt-mark unhold libcurl4
+###
