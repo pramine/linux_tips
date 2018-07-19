@@ -46,3 +46,9 @@ $ ssh -L 192.168.0.102:8080:127.0.0.1:80 vtraida@example.com -p 2220
 
 ##?????
 iptables -t nat -nvL --line-numbers
+
+### Serch
+find * -name 'main?-*.x' | xargs echo rm -rf
+The above prints a command that removes the unwanted directories (without actually removing them). If it looks OK, simply run the printed command, or run
+
+find * -name 'main?-*.x' | xargs rm -rf
