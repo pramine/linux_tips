@@ -52,3 +52,7 @@ find * -name 'main?-*.x' | xargs echo rm -rf
 The above prints a command that removes the unwanted directories (without actually removing them). If it looks OK, simply run the printed command, or run
 
 find * -name 'main?-*.x' | xargs rm -rf
+
+##https://linuxconfig.org/how-to-restart-network-on-ubuntu-18-04-bionic-beaver-linux
+sudo systemctl restart systemd-networkd
+
