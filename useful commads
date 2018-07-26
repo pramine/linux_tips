@@ -56,7 +56,7 @@ find * -name 'main?-*.x' | xargs rm -rf
 ##https://linuxconfig.org/how-to-restart-network-on-ubuntu-18-04-bionic-beaver-linux
 sudo systemctl restart systemd-networkd
 
-###Create empty test file
+###Create empty test file (https://www.cyberciti.biz/faq/howto-create-lage-files-with-dd-command/)
 fallocate -l 5G test5gb.img
 #orr DD
 dd if=/dev/zero of=555file.txt count=1000024 bs=1024
