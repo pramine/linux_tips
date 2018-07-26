@@ -56,3 +56,5 @@ find * -name 'main?-*.x' | xargs rm -rf
 ##https://linuxconfig.org/how-to-restart-network-on-ubuntu-18-04-bionic-beaver-linux
 sudo systemctl restart systemd-networkd
 
+###Create empty test file
+fallocate -l 5G test5gb.img
