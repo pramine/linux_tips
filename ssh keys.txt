@@ -15,19 +15,9 @@ Enter same passphrase again:
 Your identification has been saved in vtraida-18key.
 Your public key has been saved in vtraida-18key.pub.
 The key fingerprint is:
-SHA256:AzuvDIUZq0bgj6WhWO/UfowVqiQKLskS2n+e7dLOfVg vtraida@gmail.com
+SHA256:AzuvDIUZq0bgj6WhWO/UfowVqiQK******* *******@gmail.com
 The key's randomart image is:
-+---[RSA 4096]----+
-|                 |
-|                 |
-|.   . .          |
-|..   = o.        |
-| oo.+ +.S.       |
-|=oBo.o.o..  E    |
-|BBo++..=.  o     |
-|*+.o.++=+.. .    |
-|o  .oo*== ..     |
-+----[SHA256]-----+
+
 
 
 ssh-copy-id -i vtraida-18key.pub vadym_traida@10.25.12.162
