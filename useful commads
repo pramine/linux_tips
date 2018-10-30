@@ -63,3 +63,10 @@ dd if=/dev/zero of=555file.txt count=1000024 bs=1024
 1000024+0 records in
 1000024+0 records out
 1024024576 bytes (1.0 GB, 977 MiB) copied, 1.75595 s, 583 MB/s
+
+###flush dns ubuntu 18
+#You may use this command: 
+sudo systemd-resolve --flush-caches
+
+#To verify that flush was sucessfull, use: 
+sudo systemd-resolve --statistics
